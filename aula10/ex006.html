@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+
+    <style>
+        div#area {
+            font: normal 12pt arial;
+            background: rgb(31, 124, 31);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> <!-- onclick="toClick()" onmouseenter="toEnter()" onmouseout="toLeave()" -->
+        Conect with people...
+    </div>
+
+    <script>
+        var a = window.document.getElementById("area")
+        a.addEventListener("click", toClick)
+        a.addEventListener("mouseenter", toEnter)
+        a.addEventListener("mouseout", toLeave)
+        
+        function toClick() {
+            a.innerText = "Clicked !"
+            a.style.backgroundColor = "red"
+        }
+
+        function toEnter() {
+            a.innerText = "Came in !"
+        }
+
+        function toLeave() {
+            a.innerText = "It went out !"
+            a.style.backgroundColor = "rgb(31, 124, 31)"
+        }
+    </script>
+</body>
+</html>

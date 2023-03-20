@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's your Nationality</title>
+</head>
+<body>
+    <h1>What's your Nationality</h1>
+    Country: <input type="text" name="txt-country" id="txt-country">
+    <input type="button" value="Verify" onclick="VerifyCountry()">
+    <div id="result">Result</div>
+
+    <script>
+        function VerifyCountry() {
+            let nameCountry = document.querySelector("#txt-country")
+            let result = document.querySelector("#result")
+
+            if(nameCountry == "Brazil") {
+                result.innerHTML = `You're <strong>Brazilian</strong>.`
+                result.style.color = "green"
+            } else {
+                result.innerHTML = `You're <strong>Foreigner</strong>.`
+                result.style.color = "red"
+            }   
+        }
+    </script>
+</body>
+</html>
