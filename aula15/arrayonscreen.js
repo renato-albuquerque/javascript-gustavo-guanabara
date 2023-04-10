@@ -1,6 +1,6 @@
 let values = [8, 1, 7, 4, 2, 9]
 
-values.sort()
+values.sort()   /* Put in order. */
 console.log(values);
 
 /* for(let pos = 0; pos < values.length; pos++) {

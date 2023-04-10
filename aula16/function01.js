@@ -23,25 +23,25 @@ console.log(sum(2, 5));
 
 // ex003
 
-function fatorial(n) {
-    let fat = 1
+function factorial(n) {
+    let fact = 1
     for(let c = n; c > 1; c--) {
-        fat *= c
+        fact *= c
     }
-    return fat
+    return fact
 }
 
-console.log(fatorial(5));
+console.log(factorial(5));
 
 
 // ex004
 
-function fatorial(n) {
+function factorial(n) {
     if(n == 1) {
         return 1
     } else {
-        return n * fatorial(n-1)
+        return n * factorial(n-1)
     }
 }
 
-console.log(fatorial (5)); 
+console.log(factorial (5)); 
